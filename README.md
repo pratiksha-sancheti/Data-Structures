@@ -8,16 +8,13 @@
     6. Update
     7. Count Number of nodes
     8. Search
-    9. Print List
-
-
+    9. Print List   
 2.Trees
-
-    1. Binary Tress
-        1. Create Tree
-        2. Traversal by recusrsion(Inorder,Preorder,Postorder)
-        3. Traversal by iteration(Inorder,Preorder,Postorder)
-        4. Breadth First Traversal
-        5. Height of Tree
+    - Binary Tress
+        - Create Tree
+        - Traversal by recusrsion(Inorder,Preorder,Postorder)
+        - Traversal by iteration(Inorder,Preorder,Postorder)
+        - Breadth First Traversal
+        - Height of Tree
         
         
