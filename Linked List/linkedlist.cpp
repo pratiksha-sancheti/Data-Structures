@@ -1,4 +1,3 @@
-/*Issues: Delete list*/
 #include "iostream"
 using namespace std;
 class node {
