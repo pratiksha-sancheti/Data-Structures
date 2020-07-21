@@ -1,6 +1,6 @@
 # Data-Structures
 - Linked List
-    -Singly Linked List
+    - Singly Linked List
         - Create Linked List
         - Insert
         - Append
