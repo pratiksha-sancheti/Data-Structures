@@ -1,16 +1,16 @@
 # Data-Structures
 - Linked List
-    - Create Linked List
-    - Insert
-    - Append
-    - Delete node
-    - Delete List
-    - Update
-    - Count Number of nodes
-    - Search
-    - Print List 
+    -Singly Linked List
+        - Create Linked List
+        - Insert
+        - Append
+        - Delete node
+        - Delete List
+        - Update
+        - Count Number of nodes
+        - Search
+        - Print List 
     
-
 - Trees
     - Binary Tress
         - Create Tree
