@@ -1,0 +1,26 @@
+Enter root of the tree
+Enter left child of1
+Enter left child of2
+Enter left child of4
+Enter right child of4
+Enter right child of2
+Enter left child of5
+Enter right child of5
+Enter right child of1
+Enter left child of3
+Enter right child of3
+Inorder Traversal
+4 2 5 1 3 
+ PreOrder Traversal
+1 2 4 5 3 
+ PostOrder Traversal
+4 5 2 3 1 
+ Inorder Iterative
+4 2 5 1 3 
+ PreOrder Iterative
+1 2 4 5 3 
+ Postorder Iterative
+4 5 2 3 1 
+ BreadthFirst Traversal
+1 2 3 4 5 
+ Height Of tree 3
