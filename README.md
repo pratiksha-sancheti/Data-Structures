@@ -1,12 +1,22 @@
 # Data-Structures
-1.Linked List
-
-    a.Create Linked List
-    b.Insert
-    c.Append
-    d.Delete node
-    e.Delete List
-    f.Update
-    g.Count Number of nodes
-    h.Search
-    i.Print List
+- Linked List
+    - Singly Linked List
+        - Create Linked List
+        - Insert
+        - Append
+        - Delete node
+        - Delete List
+        - Update
+        - Count Number of nodes
+        - Search
+        - Print List 
+    
+- Trees
+    - Binary Tress
+        - Create Tree
+        - Traversal by recusrsion(Inorder,Preorder,Postorder)
+        - Traversal by iteration(Inorder,Preorder,Postorder)
+        - Breadth First Traversal
+        - Height of Tree
+        
+        
