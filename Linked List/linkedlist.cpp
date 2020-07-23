@@ -71,9 +71,9 @@ class LinkedList{
             if(flag==0)
                 cout<<"Not Found"<<endl;
         }
-        void deleteNode(node **head,int n)
+        node *deleteNode(node *head,int n)
         {
-            node *temp = *head;
+           /* node *temp = *head;
             
             node *prev;
             prev=temp;
@@ -101,7 +101,25 @@ class LinkedList{
                 prev = prev->next;
             }
             if(flag==0)
-                cout<<"Not Found!!"<<endl;
+                cout<<"Not Found!!"<<endl;*/
+
+                node *temp = new node();
+                temp->data = 0;
+            temp->next = head;
+             node *prev = temp;
+            while(prev->next != NULL)
+            {
+            if(prev->next->data == n)
+            {
+                node *temp2 = prev->next;
+                prev->next = temp2->next;
+            }
+            else 
+                prev = prev->next;
+                
+        }
+        
+       return temp->next; 
         }
         void updateData(node *head,int n,int update)
         {
@@ -178,7 +196,7 @@ int main()
             case 6:
                 cout<<"Enter data to be deleted"<<endl;
                 cin>>n;
-                l.deleteNode(&head,n);
+                head = l.deleteNode(head,n);
                 break;
             case 7:
                 int update;

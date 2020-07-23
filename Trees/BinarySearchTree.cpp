@@ -81,16 +81,18 @@ class BinarySearchTree
             }
             cout<<x<<" Not Found!!"<<endl;
         }
-        node *deleteNode(node *root,int x)
+        void deleteNode(node *root,int x)
         {
             if(root==NULL)
             {
                 cout<<x<<" Not Found"<<endl;
-                return NULL;
+                return;
             }
             node *temp=root;
-            while(temp->lchild!=NULL && temp->rchild!=NULL)
+            node *prev=NULL;
+            while(temp!=NULL)
             {
+                prev=temp;
                 if(x > temp->data)
                     temp = temp->rchild;
                 else if(x<root->data)
@@ -100,20 +102,66 @@ class BinarySearchTree
                     cout<<x<<" Found!!"<<endl;
                     if(temp->lchild==NULL && temp->rchild==NULL)
                     {
-                        
+                        if(prev->lchild==temp)
+                            prev->lchild=NULL;
+                        else
+                            prev->rchild=NULL;
                         delete temp;
-                        //root=NULL;
                         cout<<"Deleted"<<endl;
-                        return root;
+                        return;
                     }
-                    
+                    if(temp->lchild==NULL || temp->rchild==NULL)
+                    {
+                        if(temp->lchild==NULL)
+                        {
+                            if(prev->lchild==temp)
+                                prev->lchild=temp->rchild;
+                            else 
+                                prev->rchild=temp->rchild;
+                            delete temp;
+                            cout<<"Deleted"<<endl;
+                            return;
+                        }
+                        else 
+                        {
+                            if(prev->lchild==temp)
+                                prev->lchild = temp->lchild;
+                            else 
+                                prev->rchild = temp->lchild;
+                            delete temp;
+                            cout<<"Deleted"<<endl;
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        node *temp2 = temp->rchild;
+                        if(temp2->lchild==NULL)
+                        {
+                            temp->data = temp2->data;
+                            temp->rchild=temp2->rchild;
+                            delete temp2;
+                            cout<<"Deleted"<<endl;
+                            return;
+                        }
+                        while(temp2->lchild!=NULL)
+                        {
+                            prev = temp2;
+                            temp2 = temp2->lchild;
+                        }
+                        temp->data = temp2->data;
+                        prev->lchild = NULL;
+                        delete temp2;
+                        cout<<"Deleted!!"<<endl;
+                        return;
+                    }
                 }
             }
         }
 };
 int main()
 {
-    OJ;
+    //OJ;
     BinarySearchTree bst;
     node *root=NULL;
     int x;
@@ -158,7 +206,7 @@ int main()
             case 5:
                 cout<<"Enter element to be deleted"<<endl;
                 cin>>x;
-                root = bst.deleteNode(root,x);
+                bst.deleteNode(root,x);
                 cout<<"Inorder"<<endl;
                 bst.Inorder(root);
                 cout<<endl;

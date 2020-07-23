@@ -7,19 +7,18 @@ Enter data to insert in tree
 Enter data to insert in tree
 Enter data to insert in tree
 Enter data to insert in tree
-Enter data to insert in tree
 0.Exit 1.Insert 2.Inorder 3.Preorder
 4.Search 5.Delete
 Inorder
-1 2 3 5 6 7 8 
+1 2 3 5 7 8 
 0.Exit 1.Insert 2.Inorder 3.Preorder
 4.Search 5.Delete
 Preorder
-5 2 1 3 7 6 8 
+5 2 1 3 7 8 
 0.Exit 1.Insert 2.Inorder 3.Preorder
 4.Search 5.Delete
 Enter element to be searched
-8 Found!!
+8 Not Found!!
 0.Exit 1.Insert 2.Inorder 3.Preorder
 4.Search 5.Delete
 Enter element to be searched
@@ -27,10 +26,10 @@ Enter element to be searched
 0.Exit 1.Insert 2.Inorder 3.Preorder
 4.Search 5.Delete
 Enter element to be deleted
-3 Found!!
+2 Found!!
 Deleted
 Inorder
-1 2 3 5 6 7 8 
+1 3 5 7 8 
 0.Exit 1.Insert 2.Inorder 3.Preorder
 4.Search 5.Delete
 Bye!!
