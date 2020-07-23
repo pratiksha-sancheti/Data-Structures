@@ -103,8 +103,8 @@ class LinkedList{
             if(flag==0)
                 cout<<"Not Found!!"<<endl;*/
 
-                node *temp = new node();
-                temp->data = 0;
+            node *temp = new node();
+            temp->data = 0;
             temp->next = head;
              node *prev = temp;
             while(prev->next != NULL)
@@ -113,6 +113,7 @@ class LinkedList{
             {
                 node *temp2 = prev->next;
                 prev->next = temp2->next;
+                delete temp2;
             }
             else 
                 prev = prev->next;
