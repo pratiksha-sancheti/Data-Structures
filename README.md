@@ -18,5 +18,11 @@
         - Traversal by iteration(Inorder,Preorder,Postorder)
         - Breadth First Traversal
         - Height of Tree
+    - Binary Search Tree
+        - Create Tree
+        - Insert 
+        - Traversal
+        - Search
+        - [ ] Delete Node
         
         
